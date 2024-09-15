@@ -28,7 +28,7 @@ Installation
 3. Install the required libraries:
    pip install -r requirements.txt
 
-Anomaly Detection Algorithm
+Anomaly Detection Algorithm and Effectiveness
 ---------------------------
 **Algorithm Selection:**
 The project uses a Z-score based anomaly detection method:
