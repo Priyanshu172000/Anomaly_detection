@@ -11,7 +11,7 @@ This project implements an anomaly detection system for continuous data streams 
 Table of Contents
 ------------------
 - Installation
-- Anomaly Detection Algorithm
+- Anomaly Detection Algorithm and Effectiveness
 - Explanation of Key Components
 - Real-Time Visualization
 - Output
@@ -30,10 +30,13 @@ Installation
 
 Anomaly Detection Algorithm
 ---------------------------
+**Algorithm Selection:**
 The project uses a Z-score based anomaly detection method:
 - Z-score: Measures how far a data point deviates from the mean in terms of standard deviations.
 - Sliding Window: A window of recent data points is used to adapt to concept drift in the data.
-- Anomalies: Detected if the Z-score exceeds a specified threshold (default: 3).
+- Anomalies: Detected if the Z-score exceeds a specified threshold.
+
+**Effectiveness:** The Z-score method is effective for data streams with normal distribution, where most data points cluster around a central value (mean). It handles seasonal variations (sinusoidal patterns) and detects outliers effectively.
 
 Explanation of Key Components
 -----------------------------
